@@ -1,0 +1,16 @@
+{
+  "name": "l1-programming-start",
+  "version": "1.0.0",
+  "description": "1DV610 - Assignment L1 - Start Programming Again",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patricia Johansson <pj222uc@student.lnu.se>",
+  "contributors": [
+    "Patricia Johansson <pj222uc@student.lnu.se>"
+  ],
+  "license": "MIT",
+  "private": true
+}
