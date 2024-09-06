@@ -5,6 +5,8 @@
   "type": "module",
   "main": "src/app.js",
   "scripts": {
+    "start": "node src/app.js",
+    "lint": "npx eslint ./src || exit 0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patricia Johansson <pj222uc@student.lnu.se>",
@@ -12,5 +14,8 @@
     "Patricia Johansson <pj222uc@student.lnu.se>"
   ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.10"
+  }
 }

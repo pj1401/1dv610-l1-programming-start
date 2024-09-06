@@ -4,8 +4,12 @@
  * @version 1.0.0
  */
 
+import { GreetingApp } from './GreetingApp.js'
+
 /**
  * Start the Application.
+ *
+ * @param {string} name - A name.
  */
 async function startGreetingApp (name) {
   const greeting = new GreetingApp(name)
@@ -19,7 +23,7 @@ async function startGreetingApp (name) {
 try {
   // Parse the command-line (skip the first two arguments).
   const [,, name] = process.argv
-  startApplication(name)
+  startGreetingApp(name)
 } catch (error) {
   console.error(error.message)
 }
