@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "@lnu/eslint-config": "^1.1.10"
   }
 }
