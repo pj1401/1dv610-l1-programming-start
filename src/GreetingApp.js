@@ -39,11 +39,13 @@ export class GreetingApp {
 
     const chars = this.#name.split('')
 
-    for (let i = 0; i < chars.length; i++) {
+    const usedChars = []
+
+    for (let i = 0, length = chars.length; i < length; i++) {
       for (let j = 0; j < chars.length; j++) {
         this.#greeting.push(chars[j])
       }
-      chars.pop()
+      usedChars.push(chars.pop())
       this.#greeting.push('\n')
     }
   }
