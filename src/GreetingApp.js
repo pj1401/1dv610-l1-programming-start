@@ -18,4 +18,20 @@ export class GreetingApp {
   constructor (name) {
     this.#name = name
   }
+
+  /**
+   * Returns a string representing the object.
+   *
+   * @returns {string} A greeting.
+   */
+  toString () {
+    return this.#name
+  }
+
+  /**
+   * Run the greeting application.
+   */
+  async run () {
+    console.log('Hello World!')
+  }
 }
