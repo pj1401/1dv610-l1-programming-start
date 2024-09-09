@@ -48,5 +48,18 @@ export class GreetingApp {
       usedChars.push(chars.pop())
       this.#greeting.push('\n')
     }
+
+    this.#greeting.push('\n')
+
+    for (let i = 0, length = usedChars.length; i < length; i++) {
+      for (let j = 0; j <= i; j++) {
+        this.#greeting.push(usedChars[j])
+      }
+      if (i === length - 1) {
+        this.#greeting.push('!')
+      } else {
+        this.#greeting.push('\n')
+      }
+    }
   }
 }
